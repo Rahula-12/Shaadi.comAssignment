@@ -56,6 +56,7 @@ dependencies {
     implementation("androidx.room:room-runtime:2.6.1")
     kapt("androidx.room:room-compiler:2.6.1")
     implementation("androidx.room:room-ktx:2.6.1")
+    implementation("androidx.room:room-paging:2.6.1")
 
     // Hilt
     implementation("com.google.dagger:hilt-android:2.51")
@@ -63,6 +64,7 @@ dependencies {
 
     // Paging
     implementation("androidx.paging:paging-runtime:3.3.0")
+
 
     // Optional - for Kotlin coroutines support with Paging
     implementation("androidx.paging:paging-common-ktx:3.3.0")
