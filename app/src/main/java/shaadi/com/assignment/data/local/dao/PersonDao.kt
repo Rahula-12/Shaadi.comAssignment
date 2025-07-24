@@ -2,6 +2,7 @@ package shaadi.com.assignment.data.local.dao
 
 import androidx.lifecycle.LiveData
 import androidx.paging.PagingData
+import androidx.paging.PagingSource
 import androidx.room.Dao
 import androidx.room.Insert
 import androidx.room.Query
@@ -14,7 +15,7 @@ interface PersonDao{
     suspend fun insert(person: Person)
 
     @Query("Select * from Person")
-    fun getAllPersons():LiveData<PagingData<Person>>
+    fun getAllPersons(): PagingSource<Int, Person>
 
     @Query("Delete from Person")
     suspend fun clearAll()
