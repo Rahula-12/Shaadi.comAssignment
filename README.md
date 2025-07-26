@@ -61,8 +61,8 @@ The project follows a clean <b>MVVM (Model-View-ViewModel)</b> architecture and 
 git clone [https://github.com/Rahula-12/Shaadi.comAssignment](https://github.com/Rahula-12/Shaadi.comAssignment)
 2. Import project to Android Studio.
 3. Run the app on an emulator or physical device.
-4. If you want to download the apk and run it on your device, you can download it from:- [https://github.com/Rahula-12/Shaadi.comAssignment/releases/download/v1/app-debug.apk
-](https://github.com/Rahula-12/Shaadi.comAssignment/releases/download/v1/app-debug.apk)
+4. If you want to download the apk and run it on your device, you can download it from:- [https://github.com/Rahula-12/Shaadi.comAssignment/releases/download/v1/ShaadicomAssignment.apk
+](https://github.com/Rahula-12/Shaadi.comAssignment/releases/download/v1/ShaadicomAssignment.apk)
 ## Persistent Behavior:-
 
 1. Once a user accepts or rejects a match, the decision is stored using Room.
