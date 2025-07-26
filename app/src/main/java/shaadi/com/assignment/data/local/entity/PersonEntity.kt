@@ -1,14 +1,16 @@
 package shaadi.com.assignment.data.local.entity
 
-import androidx.room.ColumnInfo
 import androidx.room.Entity
 import androidx.room.PrimaryKey
 
 @Entity
-data class Person(
-    @PrimaryKey
+data class PersonEntity(
+    @PrimaryKey(autoGenerate = true)
+    val id:Int=0,
     val uuid:String,
     val name:String,
     val age:Int,
-    val status:String="Unknown"
+    val address:String,
+    val image:String,
+    val status:String="Unknown",
 )
