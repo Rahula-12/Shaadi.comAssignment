@@ -1,6 +1,7 @@
 package shaadi.com.assignment.di
 
 import dagger.Module
+import dagger.Provides
 import dagger.hilt.InstallIn
 import dagger.hilt.components.SingletonComponent
 import retrofit2.Retrofit
@@ -13,6 +14,7 @@ import javax.inject.Singleton
 @Module
 object NetworkModule {
 
+    @Provides
     @Singleton
     fun providesRetrofitInstance():Retrofit {
         return Retrofit
@@ -22,6 +24,7 @@ object NetworkModule {
             .build()
     }
 
+    @Provides
     @Singleton
     fun providesAPIInstance(retrofit: Retrofit):PersonAPIService {
         return retrofit.create(PersonAPIService::class.java)
