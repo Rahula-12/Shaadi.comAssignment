@@ -40,7 +40,7 @@ class PersonRemoteMediator @Inject constructor(
                 val personExist=database.getPersonDao().getPersonByUUID(person.uuid)
                 if(personExist==null) {
                     database.withTransaction {
-                        if (loadType == LoadType.REFRESH) database.getPersonDao().clearAll()
+//                        if (loadType == LoadType.REFRESH) database.getPersonDao().clearAll()
                         database.getPersonDao().insertPerson(person)
                     }
                 }
