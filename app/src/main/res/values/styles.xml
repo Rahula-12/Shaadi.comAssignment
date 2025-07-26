@@ -1,0 +1,15 @@
+<resources>
+    <style name="MyFabStyle" parent="ThemeOverlay.Material3.FloatingActionButton.Secondary">
+        <item name="backgroundTint">@color/white</item>
+        <item name="strokeColor">@color/black</item>
+        <item name="borderWidth">10dp</item> <!-- This is likely too large for a typical border -->
+        <item name="elevation">0dp</item>
+    </style>
+
+    <style name="MyRoundedFabShape" parent=""> <!-- No need to parent from Widget.Design.FloatingActionButton here -->
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+        <item name="strokeColor">@color/cyan500</item> <!-- Ensure this color is defined -->
+        <item name="strokeWidth">2dp</item> <!-- Add strokeWidth here -->
+    </style>
+</resources>
